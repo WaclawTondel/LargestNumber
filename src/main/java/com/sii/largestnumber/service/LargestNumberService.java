@@ -1,9 +1,13 @@
 package com.sii.largestnumber.service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 class LargestNumberService {
-    String findLargestMumber(List<Integer> numbers) {
-        return null;
+    String findLargestNumber(List<Integer> numbers) {
+        return numbers.stream()
+                .map(Object::toString)
+                .sorted((s1, s2) -> (s2 + s1).compareTo(s1 + s2))
+                .collect(Collectors.joining());
     }
 }

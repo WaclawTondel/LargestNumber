@@ -18,7 +18,7 @@ class LargestNumberServiceTest {
         String expectedNumber = "95021";
 
         //when
-        String result = testService.findLargestMumber(numbers);
+        String result = testService.findLargestNumber(numbers);
 
         //then
         assertEquals(expectedNumber, result);
@@ -31,7 +31,7 @@ class LargestNumberServiceTest {
         String expectedNumber = "42423420";
 
         //when
-        String result = testService.findLargestMumber(numbers);
+        String result = testService.findLargestNumber(numbers);
 
         //then
         assertEquals(expectedNumber, result);
@@ -44,7 +44,7 @@ class LargestNumberServiceTest {
         String expectedNumber = "56550";
 
         //when
-        String result = testService.findLargestMumber(numbers);
+        String result = testService.findLargestNumber(numbers);
 
         //then
         assertEquals(expectedNumber, result);
