@@ -49,4 +49,17 @@ class LargestNumberServiceTest {
         //then
         assertEquals(expectedNumber, result);
     }
+
+    @Test
+    void shouldFilterNegativeNumbers() {
+        //given
+        List<Integer> numbers = Arrays.asList(5, -3, 50, 56, -2);
+        String expectedNumber = "56550";
+
+        //when
+        String result = testService.findLargestNumber(numbers);
+
+        //then
+        assertEquals(expectedNumber, result);
+    }
 }
